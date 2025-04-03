@@ -9,6 +9,10 @@ select{
     font-family: "Century Gothic", sans-serif;
     color: gray;
     height: 30px;
+    width: 101%;
+    border: solid grey 1px;
+    border-radius: 3px;
+    color: grey;
 }
 
 .formulario{
@@ -20,7 +24,7 @@ select{
     border-radius: 10px;
 }
 
-.nome input, .email input, .senha input, .idade input, .dtnasc input{
+.nome input, .email input, .senha input, .idade input, .dtnasc input, .titulo input{
     width: 100%;
     height: 25px;
     border: solid grey 1px;
@@ -52,11 +56,14 @@ footer{
 }
 
 textarea{
-    width: 600px;
+    width: 100%;
     height: 120px;
     resize: none;
     font-family: "Century Gothic", sans-serif;
     font-size: 14px;
+    border: solid grey 1px;
+    border-radius: 5px;
+    color: grey;
 }
   
 button{
@@ -72,10 +79,12 @@ button{
 }
 
 .anexo{ 
+    width: 98%;
     border: solid grey 1px;
     border-radius: 5px;
     border-color: grey;
     padding: 8px;
+    
 }
 
 button:hover{
