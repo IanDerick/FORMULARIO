@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+body{
+    font-family: "Century Gothic", sans-serif;
+    background-color: #dfe3e4;
+}
+
+.formulario{
+    background-color: #F2F7F8;
+    display: grid;
+    max-width: 300px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+fieldset{
+    border: none;
+    white-space: nowrap;
+}
+
+
+footer{
+    margin-top: 10%;
+    background-color: #F2F7F8;
+    color: #26ADFC;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+p{
+    text-align: center;
+    padding: 0 10%;
+}
+
+
+h1{
+    text-align: center;
+    color: #26ADFC;
+}
+
+  
+textarea{
+    width: 500px;
+    height: 120px;
+    resize: none;
+}
+  
+button{
+    width: 30%;
+    margin: 0 10%;
+    background-color: #26ADFC;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    border-color: #26ADFC;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: #2284bd;
+}
+    
+
+legend{
+    color: #26ADFC;
+}
+
+label{
+    color: black;
+}
