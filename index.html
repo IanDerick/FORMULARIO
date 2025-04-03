@@ -13,56 +13,77 @@
     </head>
     <body>
         <header>
-            <h1>Inscrição para o Evento Tech 2025</h1>
+           
         </header>
-        <p>Complete o formulário abaixo para se inscrever no evento.</p>
+        
         <div>
             <form name="frmfaleconosco" method="post" action="#" onsubmit="return validaFaleConosco()">
                 <fieldset class="formulario">
-                    <legend>Informação Pessoais</legend>
-                    <label for="nome">Nome </label>
-                    <input type="text" name="txtnome" id="nome" placeholder="Nome Sobrenome">
-                    <label for="email">E-mail </label>
-                    <input type="email" name="txtemail" id="email" placeholder="email@dominio.com">
-                    <label for="senha">Senha </label>
-                    <input type="password" name="txtsenha" id="senha" placeholder="Senha">
-                    <label for="idade">Idade </label>
-                    <input type="text" name="txtidade" id="idade" placeholder="Ex: 18">
-                    <label for="nome">Data de nascimnto: </label>
-                    <input type="date" name="txtdtnasc" id="dtnasc">
-                    <legend>Preferência do Evento</legend>
-                    <label for="motivo">Tema de interesse</label>
+                    <div>
+                        <h1 id="titulo-primario">Inscrição para o Evento Tech 2025</h1>
+                    </div>
+                    <div>
+                        <p id="subtitulo">Complete o formulário abaixo para se inscrever no evento.</p>
+                    </div>
+                    <h2>Informação Pessoais</h2>
+                    <div class="nome">
+                        <input type="text" name="txtnome" id="nome" placeholder="Nome completo">
+                    </div>
+                    <br>
+                    <div class="email">
+                        <input type="email" name="txtemail" id="email" placeholder="E-mail">
+                    </div>
+                    <br>
+                    <div class="senha">
+                        <input type="password" name="txtsenha" id="senha" placeholder="Crie uma senha">
+                    </div>
+                    <br>
+                    <div class="idade">
+                        <input type="text" name="txtidade" id="idade" placeholder="Idade">
+                    </div>
+                    <br>
+                    <div class="dtnasc">
+                        <input type="date" name="txtdtnasc" id="dtnasc">
+                    </div>
+                    <h2>Preferência do Evento</h2>
                     <select name="selmotivo" id="tema">
-                        <option value="">Escolha</option>
+                        <option value="">Selecione um tema de interesse</option>
                         <option value="FE">Front-end</option>
                         <option value="BE">Back-end</option>
                         <option value="FS">Full-stack</option>
                     </select>
-                    <br>Workshop:
-                    <div class="dev-web">
-                        <input type="checkbox" name="dev-web" id="dev-web">
-                        <label for="dev-web">Desenvolvimento web moderno</label>
+                    <div class="pref-evento">
+                        <div class="dev-web">
+                            <input type="checkbox" name="dev-web" id="dev-web">
+                            <label for="dev-web">Desenvolvimento web moderno</label>
+                        </div>
+                        <div class="IA">
+                            <input type="checkbox" name="IA" id="IA">
+                            <label for="IA">Introdução à Inteligência Artificial</label>
+                        </div>
+                        <div class="web-sec">
+                            <input type="checkbox" name="web-sec" id="web-sec">
+                            <label for="web-sec">Segurança na Internet</label>
+                        </div>
                     </div>
-                    <div class="IA">
-                        <input type="checkbox" name="IA" id="IA">
-                        <label for="IA">Introdução à Inteligência Artificial</label>
-                    </div>
-                    <div class="web-sec">
-                        <input type="checkbox" name="web-sec" id="web-sec">
-                        <label for="web-sec">Segurança na Internet</label>
-                    </div>
-                    <label for="titulo">Título: </label>
-                    <textarea name="txtTitulo" id="titulo"></textarea>
                     <br>
-                    <label for="resumo">Resumo: </label>
-                    <textarea name="txtresumo" id="resumo"></textarea>
-                    <label for="arquivo">Anexar Apresentação (PDF):</label>
-                    <input type="file" name="Escolher ficheiro" id="arquivo">
+                    <input name="txtTitulo" id="titulo" placeholder="Título da Apresentação"></input>
+                    <br>
+                    <textarea name="txtresumo" id="resumo" placeholder="Resumo da apresentação"></textarea>
+                    <br>
+                    <div class="anexo">
+                        <input type="file" name="Escolher ficheiro" id="arquivo">
+                    </div>
+                    <br>
+                    <div class="enviar-formulario">
+                        <button type="submit" id="submit" >Enviar</button>
+                    </div>
+                    <div class="footer">
+                        <footer>Copyright &copy; Formulário 2025</footer>
+                    </div>
                 </fieldset>
             </form>
         </div>
-        <button type="submit" id="submit" >Enviar</button>
     </section>
-        <footer>Copyright &copy; Formulário 2025</footer>
     </body>
 </html>
