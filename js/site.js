@@ -2,6 +2,12 @@ function validaFaleConosco(){
     var nome = document.frmfaleconosco.txtnome.value;
     var expRegNome = new RegExp ("^[A-zÀ-ü]{3,}([ ]{1}[A-zÀ-ü]{2,})+$");
     
+    var idade = document.frmfaleconosco.txtidade.value;
+    var expRegIdade = new RegExp ("^[0-9]{2,3}$");
+    
+    var senha = document.frmfaleconosco.txtsenha.value;
+    var expRegSenha = new RegExp ("^[A-zÀ-ü0-9]{2,}")
+
     if(!expRegNome.test(nome)){
         alert("Preencha o campo Nome corretamente.");
         document.frmfaleconosco.txtnome.focus();
@@ -14,14 +20,14 @@ function validaFaleConosco(){
         return false;
     }
 
-    if(document.frmfaleconosco.txtsenha.value==""){
-        alert("Preencha o campo da Senha.");
+    if(!expRegSenha.test(senha)){
+        alert("Preencha o campo da Senha corretamente.");
         document.frmfaleconosco.txtsenha.focus();
         return false;
     }
 
-    if(document.frmfaleconosco.txtidade.value==""){
-        alert("Preencha o campo da Idade.");
+    if(!expRegIdade.test(idade)){
+        alert("Preencha o campo da Idade corretamente.");
         document.frmfaleconosco.txtidade.focus();
         return false;
     }
@@ -32,8 +38,20 @@ function validaFaleConosco(){
         return false;
     }
 
+    if (document.frmfaleconosco.selmotivo.value=="") {
+        alert("Preencha o campo de Preferência do Evento");
+        document.frmfaleconosco.selmotivo.focus();
+        return false;
+    }
+
+    if(document.frmfaleconosco.txtTitulo.value==""){
+        alert("Preencha o campo Título da Apresentação.");
+        document.frmfaleconosco.txtTitulo.focus();
+        return false;
+    }
+
     if(document.frmfaleconosco.txtresumo.value==""){
-        alert("Preencha o campo Comentário.");
+        alert("Preencha o campo Resumo da apresentação.");
         document.frmfaleconosco.txtresumo.focus();
         return false;
     }
@@ -58,4 +76,4 @@ function verificaExtensao() {
       extPermitidas.value = "";
 
     }
-  }
+}
