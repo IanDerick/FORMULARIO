@@ -41,6 +41,11 @@ select{
     font-weight: bold;
 }
 
+.dev-web input, .IA input, .web-sec input{
+    transform: scale(1.5);
+    margin: 8px;
+}
+
 fieldset{
     border: none;
     white-space: nowrap;
